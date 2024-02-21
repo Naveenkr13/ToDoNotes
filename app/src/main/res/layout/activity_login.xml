@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/login"
+    android:layout_height="match_parent"
+    tools:context=".LogIn.login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_110sdp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_margin="10dp"
+                android:hint="Email Id "
+                android:id="@+id/lgemail"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/_50sdp"
+
+                android:hint="Enter Password"
+                app:passwordToggleEnabled="true"
+                android:layout_margin="10dp"
+                android:id="@+id/loginpass"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/loginbtn"
+                android:fontFamily="@font/alatsi"
+                android:text="Login"
+                android:textColor="@color/white"
+                android:backgroundTint="#F0FFAB00"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/createbtn"
+                android:fontFamily="@font/alatsi"
+                android:textAllCaps="false"
+                android:text="Create New Account "
+
+                android:textSize="@dimen/_15sdp"
+                android:textColor="#FFAB00"
+                android:background="@android:color/transparent"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/forgetpass"
+                android:fontFamily="@font/alatsi"
+                android:textAllCaps="false"
+                android:text="Forgot Password ? "
+
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#FFAB00"
+                android:background="@android:color/transparent"
+                />
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/font"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alex_brush"
+            android:gravity="center"
+            android:textSize="@dimen/_20sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:textColor="#FFAB00"
+            android:textStyle="bold"
+
+            android:text=" Important Note and to do list is just one step far from you " />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

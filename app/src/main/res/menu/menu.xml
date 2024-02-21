@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item android:id="@+id/profile"
+    android:icon="@drawable/account"
+    app:showAsAction="always"
+    android:title="Profile" />
+    <item android:id="@+id/todo"
+        android:icon="@drawable/todolist"
+        app:showAsAction="always"
+        android:title="ToDoList"
+        />
+    <item android:id="@+id/logout"
+        android:icon="@drawable/logout"
+        app:showAsAction="collapseActionView"
+        android:title="Logout"
+
+        />
+    <item android:id="@+id/developer"
+        android:icon="@drawable/dev"
+        app:showAsAction="collapseActionView"
+        android:title="About Developer"
+        />
+</menu>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/toolbars"
+            android:background="#F09DE07A"
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilepic"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@drawable/pic" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:layout_below="@id/profilepic"
+        android:background="#F09DE07A"
+        android:layout_height="match_parent"
+        tools:ignore="NotSibling">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+
+            android:layout_height="match_parent">
+           <androidx.appcompat.widget.AppCompatButton
+               android:layout_width="@dimen/_40sdp"
+               android:layout_height="@dimen/_40sdp"
+               android:textAllCaps="false"
+
+               android:fontFamily="@font/arizonia"
+               android:background="@drawable/done"
+               android:id="@+id/uploadbtn"
+               android:layout_gravity="center"
+               android:elevation="@dimen/_10sdp"
+
+               android:backgroundTint="#FFAB00"
+               />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_22sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="#fff"
+                android:fontFamily="@font/arizonia"
+
+                android:text="Welcome - to Profile "
+                android:textAlignment="center"
+                android:textColor="#0A0A0A"
+                android:textSize="@dimen/_30sdp"
+                android:textStyle="normal"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_22sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_26sdp"
+                android:id="@+id/nameshows"
+                android:textStyle="bold"
+                android:fontFamily="@font/arizonia"
+                android:textAlignment="center"
+                android:textColor="#FFAB00"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/alex_brush"
+                android:textAlignment="center"
+                android:id="@+id/emailshow"
+                android:layout_margin="@dimen/_22sdp"
+
+                android:hint="email"
+                android:textStyle="bold"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="#FFAB00"
+
+                />
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
