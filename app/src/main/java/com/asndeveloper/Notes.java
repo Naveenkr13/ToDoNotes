@@ -31,7 +31,9 @@ public class Notes {
     }
     @Ignore
     public Notes( String title, String content) {
-
+        this.id = id;
+        this.title = title;
+        this.content = content;
     }
     // step 6 getter and setter
 
